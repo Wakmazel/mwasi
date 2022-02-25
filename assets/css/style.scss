@@ -6,7 +6,7 @@
   --titre-size: 3.5rem;
   --sub-titre-size: 5.5rem;
   --sub-line-height: 4.5rem;
-  --desc-size: 1.2rem;
+  --desc-size: 1.0rem;
   --desc-size-w: 80%;
   --card-ville-size-w: 250px;
   --card-ville-size-h: 400px;
@@ -103,14 +103,18 @@ body{
       &__item {
         color: white;
         height: 100vh;
-        display: flex;
-        align-items: center;
         width: 50%;
-        padding: var(--section-padding);
+        padding: 0 var(--section-padding);
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
       }
       .left {
         width: 55%;
         background: $secondary;
+        
+        height: 100vh;
         .content {
           .titre {
             font-weight: 500;
@@ -147,10 +151,9 @@ body{
       }
       .right {
         width: 45%;
-        display: flex;
-        justify-content: center;
         .img-content{
           position: relative;
+          
           img{
             width: 90%;
             position: relative;
@@ -159,7 +162,8 @@ body{
           .circle{
             z-index: 1;
             position: absolute;
-            left: 15%;
+            left: 0%;
+            right: 0%;
             width: 300px;
             height: 300px;
             background: rgba(255, 255, 255, 0.514);

@@ -1,0 +1,322 @@
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar .logo {
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 35px;
+  color: var(--primary);
+  text-shadow: 1px 1px black;
+}
+
+.navbar .logo span {
+  color: #ffff;
+  font-weight: 700;
+}
+
+/* ECRAN LARGE */
+
+.navbar {
+  height: 80px;
+  padding-top: 8px;
+}
+
+.navbar a .img_ {
+  width: 35px;
+  padding: 8px;
+  background: var(--primary);
+  border: solid 4 px #ffffff00;
+  box-shadow: 0px 0px 5px #9000ff inset;
+  border-radius: 50px;
+  margin-top: 4px;
+}
+
+
+
+
+.head .body-head .card-paid {
+  padding-top: 8px;
+  border-radius: 5px;
+}
+
+
+
+@keyframes deplacer {
+  0% {
+      top: 26%;
+  }
+
+  50% {
+      top: 18%;
+  }
+}
+
+@keyframes img {
+  0% {
+      width: 480px;
+  }
+
+  50% {
+      width: 580px;
+  }
+}
+
+.navbar a .img_:hover {
+  width: 45px;
+}
+
+
+
+.head .body-head .card-paid .titre p {
+  text-align: center;
+  color: #ffff;
+  font-size: 33px;
+  font-weight: 800;
+  line-height: 42px;
+  text-shadow: 1px 1px black;
+
+}
+
+@keyframes titre {
+  0% {
+      font-size: 33px;
+  }
+
+  50% {
+      font-size: 35px;
+  }
+}
+
+.head .body-head .card-paid .sub p {
+  font-family: 'Poppins';
+  font-size: 20px;
+  color: #ffff;
+  text-shadow: 0.5px 0.5px black;
+  padding: 6px 20px;
+  font-weight: 600;
+}
+
+.head .body-head .card-paid .btn {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.head .body-head .card-paid .btn button {
+  height: 51px;
+  border-radius: 50px;
+  border-style: none;
+  outline: none;
+  padding: 5px 25px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 17px;
+  background: var(--primary1);
+  box-shadow: 0px 0px 5px #717171;
+  color: white;
+  text-shadow: 0 0 black;
+}
+
+.gallery {
+  height: 38vh;
+}
+
+.gallery-cell img {
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #001a51;
+  padding: 3px;
+  background: #ffffff;
+  border: solid 8px var(--primary);
+}
+
+.gallery-cell {
+  width: 20%;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.body-section {
+  padding: 12px 36px;
+ 
+  margin-bottom: 80px;
+  /* background: #09006f; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #000e2c inset;
+  height: 380px;
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.description .content_des {
+  width: 60%;
+  margin: auto;
+}
+
+.description p {
+  text-align: left;
+}
+
+.description .titre-grand p {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.description .titre-petit p {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.description .titre-grand hr {
+  width: 55px;
+  margin: 0;
+  border: none;
+  height: 8px;
+  background: var(--primary);
+  border-radius: 56px;
+  margin-bottom: 16px;
+}
+
+.roadmap {
+  color: white;
+  background: #00596f80;
+}
+
+
+
+.progressbar {
+  counter-reset: step;
+}
+
+.progressbar li {
+  list-style-type: none;
+  float: left;
+  width: 33.33%;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+}
+
+.progressbar li:before {
+  /* CSS for creating steper block before the li item*/
+  content: counter(step);
+  counter-increment: step;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  border: 2px solid #ddd;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.progressbar li:after {
+  /* CSS for creating horizontal line*/
+  content: ’’;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  top: 15px;
+  left: -50%;
+  z-index: -1;
+}
+
+
+.refcontent {
+  color: white;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 600;
+  background: var(--primary);
+
+  margin: 5px;
+  padding: 5px;
+  border-radius: 6px;
+  height: 190px;
+}
+
+.ref {
+  text-align: center !important;
+  font-weight: 700;
+}
+
+.profile-card .img img {
+  width: 150px;
+  border-radius: 100px;
+  border: solid 4px white
+}
+
+.profile-card {
+  width: 200px;
+  background-color: rgba(0, 128, 128, 0.438);
+  padding: 10px;
+  margin: 15px 15px;
+  border-radius: 17px;
+}
+
+.social-links i {
+  background: #ffffff59;
+  color: white;
+  padding: 9px 10px 9px 10px;
+  border-radius: 50%;
+  margin: 0 11px;
+}
+
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.des-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.des-team h3, p {
+  margin: 0;
+}
+
+
+.container-team{
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+
+}
+

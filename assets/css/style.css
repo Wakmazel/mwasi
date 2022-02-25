@@ -6,7 +6,7 @@
   --titre-size: 3.5rem;
   --sub-titre-size: 5.5rem;
   --sub-line-height: 4.5rem;
-  --desc-size: 1.0rem;
+  --desc-size: 0.8rem;
   --desc-size-w: 80%;
   --card-ville-size-w: 250px;
   --card-ville-size-h: 400px;
@@ -153,6 +153,9 @@ body {
 .main-content .main .main__content .left {
   width: 55%;
   background: #67cbed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
 }
 

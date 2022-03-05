@@ -3,10 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 :root {
   --section-padding: 100px;
-  --titre-size: 3.5rem;
-  --sub-titre-size: 5.5rem;
-  --sub-line-height: 4.5rem;
-  --desc-size: 0.8rem;
+  --titre-size: 2.5rem;
+  --sub-titre-size: 3.5rem;
+  --sub-line-height: 3.0rem;
+  --desc-size: 1rem;
   --desc-size-w: 80%;
   --card-ville-size-w: 250px;
   --card-ville-size-h: 400px;
@@ -18,7 +18,7 @@
     --titre-size: 1.5rem;
     --sub-titre-size: 2.5rem;
     --sub-line-height: 2.5rem;
-    --desc-size: 1.0rem;
+    --desc-size: 1rem;
     --desc-size-w: 90%;
     --card-ville-size-w: 200px;
     --card-ville-size-h: 350px;
@@ -81,12 +81,29 @@ body {
 }
 
 .main-content .header .navbar .left {
-  color: #67cbed;
+  color: #00bfff;
   font-size: 55px;
   font-weight: 900;
 }
 
+.main-content .header .navbar .left img {
+  width: 15%;
+}
+
 .main-content .header .navbar .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content .header .navbar .right .link-items {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +119,7 @@ body {
   color: white;
   font-size: 1.5rem;
   margin: 0 20px;
-  background: #fab2d2;
+  background: #ff0978;
   padding: 10px;
   border-radius: 100px;
 }
@@ -110,7 +127,7 @@ body {
 .main-content .header .navbar .right i:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  background: #fab2d2;
+  background: #ff0978;
 }
 
 .main-content .main {
@@ -128,7 +145,7 @@ body {
   display: flex;
   width: 100%;
   background: #0a877d;
-  background: #fab2d2;
+  background: #ff0978;
   width: 100%;
 }
 
@@ -151,22 +168,72 @@ body {
 }
 
 .main-content .main .main__content .left {
+  width: 45%;
+}
+
+.main-content .main .main__content .left .img-content {
+  position: relative;
+}
+
+.main-content .main .main__content .left .img-content img {
+  width: 90%;
+  position: relative;
+  z-index: 5;
+}
+
+.main-content .main .main__content .left .img-content .circle {
+  z-index: 1;
+  position: absolute;
+  left: 0%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.514);
+  margin: auto;
+  border-radius: 500px;
+}
+
+.main-content .main .main__content .left .img-content .circle .right {
+  width: 45%;
+}
+
+.main-content .main .main__content .left .img-content .circle .right .img-content {
+  position: relative;
+}
+
+.main-content .main .main__content .left .img-content .circle .right .img-content img {
+  width: 90%;
+  position: relative;
+  z-index: 5;
+}
+
+.main-content .main .main__content .left .img-content .circle .right .img-content .circle {
+  z-index: 1;
+  position: absolute;
+  left: 20%;
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.514);
+  margin: auto;
+  border-radius: 500px;
+}
+
+.main-content .main .main__content .right {
   width: 55%;
-  background: #67cbed;
+  background: #00bfff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   height: 100vh;
 }
 
-.main-content .main .main__content .left .content .titre {
+.main-content .main .main__content .right .content .titre {
   font-weight: 500;
   font-size: var(--titre-size);
   line-height: var(--sub-line-height);
   text-shadow: 0.5px 0.58px #090909;
 }
 
-.main-content .main .main__content .left .content .sub-titre {
+.main-content .main .main__content .right .content .sub-titre {
   font-weight: 900;
   font-size: var(--sub-titre-size);
   line-height: var(--sub-line-height);
@@ -174,50 +241,24 @@ body {
   text-shadow: 0.5px 0.58px black;
 }
 
-.main-content .main .main__content .left .content .desc {
+.main-content .main .main__content .right .content .desc {
   width: var(--desc-size-w);
   font-size: var(--desc-size);
   font-weight: 500;
   text-shadow: 0.5px 0.58px #767676;
 }
 
-.main-content .main .main__content .left .content button {
+.main-content .main .main__content .right .content button {
   line-height: 0px;
   padding: 1.5rem;
   font-size: 1rem;
   font-weight: 700;
   color: white;
   margin: 10px 0;
-  background: #fab2d2;
+  background: #ff0978;
   outline: none;
   border: none;
   border-radius: 50px;
-}
-
-.main-content .main .main__content .right {
-  width: 45%;
-}
-
-.main-content .main .main__content .right .img-content {
-  position: relative;
-}
-
-.main-content .main .main__content .right .img-content img {
-  width: 90%;
-  position: relative;
-  z-index: 5;
-}
-
-.main-content .main .main__content .right .img-content .circle {
-  z-index: 1;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  width: 300px;
-  height: 300px;
-  background: rgba(255, 255, 255, 0.514);
-  margin: auto;
-  border-radius: 500px;
 }
 
 .swiper-container {
@@ -239,7 +280,7 @@ body {
     --titre-size: 1.5rem;
     --sub-titre-size: 2.5rem;
     --sub-line-height: 2.5rem;
-    --desc-size: 1.0rem;
+    --desc-size: 1rem;
     --desc-size-w: 100%;
     --card-ville-size-w: 200px;
     --card-ville-size-h: 350px;
@@ -311,7 +352,7 @@ body {
 
 .roadmap .row .col {
   height: 250px;
-  background: #fab2d2;
+  background: #ff0978;
   border-radius: 10px;
   position: relative;
   display: -webkit-box;
@@ -344,9 +385,9 @@ body {
 .roadmap .row .col .counter {
   padding: 28px 0px;
   line-height: 0;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
-  margin: 5px 0;
+  margin: 0px 0;
   color: rgba(255, 255, 255, 0.544);
   width: 100%;
   text-align: center;
@@ -363,6 +404,15 @@ body {
   text-shadow: 0.2px 0.2px black;
   font-weight: 500;
   z-index: 1;
+}
+
+.roadmap .row .col .desc span {
+  font-weight: 900;
+  font-size: 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.167);
+  padding: 2px 9px;
+  border-radius: 100px;
 }
 
 .roadmap .row .col img {
@@ -384,13 +434,13 @@ body {
 }
 
 .row-titre .titre::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 50px;
   height: 10px;
   bottom: -10px;
   border-radius: 15px;
-  background: #67cbed;
+  background: #00bfff;
 }
 
 .nft .swiper-container {
@@ -437,7 +487,7 @@ body {
   color: white;
   font-size: 1.5rem;
   margin: 0 20px;
-  background: #67cbed;
+  background: #00bfff;
   padding: 10px;
   border-radius: 100px;
 }
@@ -445,7 +495,7 @@ body {
 .footer .link-items i:hover {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
-  background: #fab2d2;
+  background: #ff0978;
 }
 
 .footer-item {
